@@ -236,7 +236,7 @@ for i in range(int(samples_without_sunlight/2),iterations - (int(samples_without
         flag+=1
         flag2 = 1
     Predicted_Day = Predicted_Day1
-    #Finding those episodes that are finished in our desired state
+   
     Predicted_Day[-1][0] = Mean_Z[0][((zone_num-1)*n)+2-1]
     S = np.concatenate((Predicted_Day,np.zeros((int(samples_without_sunlight/2),1))),axis=0)
     S[0,0] = S_sensor_wat
